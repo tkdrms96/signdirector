@@ -13,9 +13,9 @@ import java.util.stream.IntStream;
 
 @Controller
 public class IndexController {
-    @GetMapping({"/", "/index"})
+    @GetMapping({"/", "/index","main.html"})
     public String index(){
-        return "index";
+        return "main";
     }
 
     @GetMapping("/blank")
