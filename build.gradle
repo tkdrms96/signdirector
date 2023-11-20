@@ -33,8 +33,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
 
-	implementation("org.mariadb.jdbc:mariadb-java-client:2.7.0")
+//	implementation("org.mariadb.jdbc:mariadb-java-client:2.7.0")
 	implementation 'org.springframework.boot:spring-boot-devtools'
+
+	runtimeOnly 'com.h2database:h2'
 
 }
 
