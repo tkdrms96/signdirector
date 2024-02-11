@@ -65,38 +65,46 @@
             return true;
         }
     </script>
+
     <!-- 배너 영역 banner -->
-    <div class="section py-5 position-relative">
+    <div class="section pb-0 position-relative">
+        <!-- svg shape, desktop only -->
+        <span class="d-none d-lg-block position-absolute top-0 start-0 end-0 bottom-0 z-index-0 mt-n4" data-aos="fade-in" data-aos-delay="800" style="width:115%">
+          <svg class="opacity-25" width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1285"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Home" transform="translate(0.000000, -1200.000000)" fill="#f1f4f8"> <g transform="translate(0.000000, 1200.000000)"> <path d="M1919,1027.0042 L1920,381.0042 C1920,381.0042 1846,352.0042 1607.104,337.0872 C1020.092,300.4342 1065.514,256.9832 819.301,134.5722 C642.592,46.7182 509.296,73.7572 318.62,69.3862 C127.942,65.0152 0,0.0042 0,0.0042 L0,692.0042 L1919,1027.0042 Z"></path> <path d="M1,258.0599 L0,904.0599 C0,904.0599 74,933.0599 312.896,947.9769 C899.908,984.6299 854.486,1028.0809 1100.699,1150.4919 C1277.408,1238.3469 1410.704,1211.3069 1601.38,1215.6779 C1792.058,1220.0489 1920,1285.0599 1920,1285.0599 L1920,593.0599 L1,258.0599 Z"></path> </g> </g> </g> </svg>
+        </span>
+
         <div class="container py-5">
 
             <div class="row g-4 justify-content-md-between align-items-md-center mb-5">
 
-                <div class="col-lg-6 col-xl-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6 col-xl-6" data-aos="fade-up" data-aos-delay="100">
 
-                    <p class="fs-4 fw-light">중간 마진을 줄여 간판을 합리적인 가격에</p>
-                    <h2 class="mb-5 display-2 fw-bold">
-                        <span class="d-block">Sign Director</span>
-                    </h2>
+                    <div class="mb-5">
+                        <h2 class="mb-5 display-2 fw-bold">
+                            <span class="d-block">Sign Director</span>
+                        </h2>
+                        <p class="fs-4 fw-light">경험을 토대로 분석과 고객과의 소통을 통하여<br/> 가장 최적의 결과를 만들어냅니다.</p>
+                    </div>
 
-                    <a href="https://wrapbootstrap.com/theme/smarty-website-admin-rtl-WB02DSN1B" target="_blank"
-                       rel="noopener nofollow"
-                       class="btn btn-info bg-gradient row-pill fw-medium d-inline-flex align-items-center px-4 mb-3">
-                        <span class="me-1">방문 견적 신청</span>
-                        <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                             class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
-                        </svg>
-                    </a>
+                    <div class="text-center-xs">
+                        <a href="#admin" class="btn btn-primary bg-gradient scroll-to shadow-primary-xlg row-pill fw-medium d-inline-flex align-items-center px-4 mb-3">
+                            <span class="me-1" onclick="location.href='/consult/saveVstEst.html'">방문견적신청</span>
+                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
+                            </svg>
+                        </a>
+
+                    </div>
 
                 </div>
+
 
                 <div class="col-12 my-5 d-lg-none"><!-- mobile spacer --></div>
 
                 <div class="col-lg-6 col-xl-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
                     <!-- hero images -->
-                    <div class="position-relative text-center aos-init aos-animate" data-aos="fade-in"
+                    <div class="position-relative text-center" data-aos="fade-in"
                          data-aos-delay="450">
 
                         <!-- svg lines -->
@@ -109,23 +117,10 @@
                         </svg>
 
                         <!-- images -->
-                        <span class="d-inline-block ratio ratio-1x1 rounded-circle bg-cover mx-1 z-index-0"
-                              style="max-width:500px; background-image:url(demo.files/images/unsplash/team/windows-WJPHTJEtgzw-unsplash.jpg);"></span>
+                        <span class="d-inline-block ratio ratio-1x1 rounded-circle bg-cover mx-1 z-index-0" style="max-width:500px; background-image:url(/images/custom/7d4332b0941c673901427ac9779c6e9a_res.jpeg);"></span>
                         <div class="position-absolute bottom-0 w-100 z-index-1">
-                            <span class="d-inline-block ratio ratio-1x1 rounded-circle bg-cover mx-1 mb-n5"
-                                  data-jarallax-element="-30"
-                                  style="max-width: 200px; background-image: url(&quot;demo.files/images/unsplash/team/thumb_330/michael-dam-mEZ3PoFGs_k-unsplash.jpg&quot;); transform: translate3d(0px, -7.41176px, 0px);"
-                                  data-jarallax-original-styles="max-width:200px; background-image:url(demo.files/images/unsplash/team/thumb_330/michael-dam-mEZ3PoFGs_k-unsplash.jpg);"><div
-                                    id="jarallax-container-0"
-                                    style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div
-                                    style="pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; position: absolute;"></div></div></span>
-                            <span class="d-inline-block ratio ratio-1x1 rounded-circle bg-cover mx-1 mt-n5"
-                                  data-jarallax-element="-60"
-                                  style="max-width: 130px; background-image: url(&quot;demo.files/images/unsplash/team/thumb_330/foto-sushi-6anudmpILw4-unsplash.jpg&quot;); transform: translate3d(0px, -17.4454px, 0px);"
-                                  data-jarallax-original-styles="max-width:130px; background-image:url(demo.files/images/unsplash/team/thumb_330/foto-sushi-6anudmpILw4-unsplash.jpg);"><div
-                                    id="jarallax-container-1"
-                                    style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div
-                                    style="pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; position: absolute;"></div></div></span>
+                            <span class="d-inline-block ratio ratio-1x1 rounded-circle bg-cover mx-1 mb-n5" data-jarallax-element="-30" style="max-width:200px; background-image:url(/images/custom/7d4332b0941c673901427ac9779c6e9a_res.jpeg);"></span>
+                            <span class="d-inline-block ratio ratio-1x1 rounded-circle bg-cover mx-1 mt-n5" data-jarallax-element="-60" style="max-width:130px; background-image:url(/images/custom/7d4332b0941c673901427ac9779c6e9a_res.jpeg);"></span>
                         </div>
                         <!-- /images 광일이가 준 사진으로 백그라운드 이미지 엎어쳐야함 -->
 
@@ -139,121 +134,111 @@
     </div>
     <!-- /배너 영역 banner -->
 
-    <div class="row g-4 col-border text-center text-gray-700">
+    <!-- block : work -->
+    <div id="section_work" class="section bg-light">
+        <div class="container z-index-1">
+
+            <!-- block : testimonials -->
+            <!--<div class="max-w-600 mx-auto text-center mb-7">
+                <h2 class="h1 fw-bold">
+                    Portfolio
+                </h2>
+            </div>-->
 
 
-        <div class="col-6 col-md-3"></div>
-        <div class="col-6 col-md-3">
 
-            <!-- svg icon -->
-            <svg width="60" viewBox="0 0 207 207">
-                <g transform="translate(-292 -375) translate(292 375)" fill="none">
-                    <circle fill="#E0F7FA" cx="103.5" cy="103.5" r="103.5"></circle>
-                    <g transform="translate(49 42)">
-                        <rect fill="#B2EBF2" width="110" height="123" rx="10"></rect>
-                        <rect fill="#26C6DA" x="9" y="10" width="31" height="31" rx="15.5"></rect>
-                        <rect fill="#26C6DA" x="49" y="19" width="36" height="4" rx="2"></rect>
-                        <rect fill="#26C6DA" x="49" y="28" width="44" height="4" rx="2"></rect>
-                        <rect fill="#26C6DA" x="11" y="51" width="89" height="60" rx="9"></rect>
-                    </g>
-                </g>
-            </svg>
 
-            <div class="h1 mt-3">
-                <a href="javascript:saveSimpleConsulting();"
-                   class="btn btn-sm btn-primary btn-soft opacity-6 save-form save-btn">
-                    전화 견적 신청
-                </a>
-            </div>
+            <div class="swiper-container p-0 p-lg-5"
+                 data-aos="fade-in" data-aos-delay="350" data-aos-offset="0"
+                 data-swiper='{
+							"autoplay": true,
+							"slidesPerView": 4,
+							"spaceBetween": 30,
+							"breakpoints": {
+								"1200": { "slidesPerView": "4" },
+								"768": { "slidesPerView": "2" },
+								"0": 	{ "slidesPerView": "1" }
+							}
+						}'>
+                <div class="swiper-wrapper py-5">
 
-            <div class="form-floating mb-1">
-                <input placeholder="Full Name" type="text" value="" class="form-control place-nm">
-                <label>성함 및 상호</label>
-            </div>
-            <div class="form-floating mb-1">
-                <input placeholder="Full Name" type="number" value="" class="form-control place-tel">
-                <label>전화번호</label>
-            </div>
-            <div class="form-floating mb-1">
-                <input placeholder="Full Name" type="text" value="" class="form-control place-juso">
-                <label>주소</label>
-            </div>
-            <div class="form-floating mb-1">
-                <input placeholder="Full Name" type="text" value="" class="form-control place-category">
-                <label>업종</label>
+                    <div class="swiper-slide">
+
+                        <a href="/images/custom/parkJin.jpg" class="d-block photoswipe photoswipe-secondary overlay-dark-hover overlay-opacity-3 rounded bg-cover lazy" data-photoswipe="work_gallery"
+                           data-background-image="/images/custom/parkJin.jpg">
+
+                            <!-- blank image : lazy background used -->
+                            <img class="w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDMiIC8+" alt="...">
+                        </a>
+
+                    </div>
+                    <div class="swiper-slide">
+
+                        <a href="/images/custom/parkJin.jpg" class="d-block photoswipe photoswipe-secondary overlay-dark-hover overlay-opacity-3 rounded bg-cover lazy" data-photoswipe="work_gallery"
+                           data-background-image="/images/custom/parkJin.jpg">
+
+                            <!-- blank image : lazy background used -->
+                            <img class="w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDMiIC8+" alt="...">
+                        </a>
+
+                    </div>
+                    <div class="swiper-slide">
+
+                        <a href="/images/custom/parkJin.jpg" class="d-block photoswipe photoswipe-secondary overlay-dark-hover overlay-opacity-3 rounded bg-cover lazy" data-photoswipe="work_gallery"
+                           data-background-image="/images/custom/parkJin.jpg">
+
+                            <!-- blank image : lazy background used -->
+                            <img class="w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDMiIC8+" alt="...">
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <a href="/images/custom/parkJin.jpg" class="d-block photoswipe photoswipe-secondary overlay-dark-hover overlay-opacity-3 rounded bg-cover lazy" data-photoswipe="work_gallery"
+                           data-background-image="/images/custom/parkJin.jpg">
+
+                            <!-- blank image : lazy background used -->
+                            <img class="w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDMiIC8+" alt="...">
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <a href="/images/custom/parkJin.jpg" class="d-block photoswipe photoswipe-secondary overlay-dark-hover overlay-opacity-3 rounded bg-cover lazy" data-photoswipe="work_gallery"
+                           data-background-image="/images/custom/parkJin.jpg">
+
+                            <!-- blank image : lazy background used -->
+                            <img class="w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDMiIC8+" alt="...">
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <a href="/images/custom/parkJin.jpg" class="d-block photoswipe photoswipe-secondary overlay-dark-hover overlay-opacity-3 rounded bg-cover lazy" data-photoswipe="work_gallery"
+                           data-background-image="/images/custom/parkJin.jpg">
+
+                            <!-- blank image : lazy background used -->
+                            <img class="w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDMiIC8+" alt="...">
+                        </a>
+
+                    </div>
+
+                </div>
             </div>
 
         </div>
 
 
-        <div class="col-6 col-md-3">
-
-            <!-- svg icon -->
-            <svg width="60" viewBox="0 0 207 207">
-                <g transform="translate(-78 -2353) translate(78 2353)" fill="none">
-                    <circle fill="#EDE7F6" cx="103.5" cy="103.5" r="103.5"></circle>
-                    <path d="M67.647 133.232c9.714 3.322 21.665 4.983 35.853 4.983 14.188 0 26.139-1.661 35.853-4.983 1.045-.357 2.182.2 2.54 1.245.071.208.108.427.108.647v8.828c0 .84-.525 1.591-1.314 1.879-9.963 3.637-22.49 5.455-37.582 5.455-15.072 0-27.345-1.814-36.819-5.441-.774-.296-1.285-1.039-1.285-1.868v-8.853c0-1.105.895-2 2-2 .22 0 .439.036.647.108z"
-                          fill="#7E57C2"></path>
-                    <path d="M156.417 75.333c-7.017 0-12.139 6.699-10.181 13.377 3.233 11.013-33.639 21.425-39.084-8.448-1.386-7.605.111-9.601 3.852-13.335 1.9-1.896 3.08-4.503 3.08-7.394 0-5.814-4.596-10.533-10.438-10.533-5.842 0-10.729 4.719-10.729 10.533 0 2.891 1.18 5.504 3.08 7.389 3.736 3.739 5.233 5.735 3.852 13.335-5.445 29.888-42.312 19.455-39.084 8.448 1.958-6.673-3.164-13.372-10.181-13.372-5.842 0-10.583 4.719-10.583 10.533 0 6.425 5.726 11.318 12.028 10.428 5.616-.786 10.325 9.213 14.125 29.998.197 1.075.962 1.958 1.999 2.305 8.842 2.96 20.673 4.44 35.494 4.44 14.808 0 26.547-1.477 35.217-4.432 1.029-.351 1.788-1.231 1.983-2.3 3.8-20.794 8.509-30.795 14.127-30.006 6.302.885 12.028-4.008 12.028-10.433 0-5.814-4.741-10.533-10.583-10.533z"
-                          fill="#B39DDB"></path>
-                </g>
-            </svg>
-
-            <div class="h1 mt-3">
-                <a href="#" class="btn btn-sm btn-primary btn-soft opacity-6">
-                    실시간 방문견적
-                </a>
-            </div>
-
-
-        </div>
+        <!-- svg shape -->
+        <svg class="absolute-full z-index-0" width="100%" height="100%" viewBox="0 0 1920 90" preserveAspectRatio="none">
+            <path fill="rgba(0,0,0,.01)" d="M1920,0C1217,0,120.574,155.567,0,0v90h1920V0z"></path>
+        </svg>
 
     </div>
-    <!--  포트폴리오  -->
-    <div id="section_gallery" class="section bg-light">
-        <div class="container">
-
-            <!-- using data-gfont -->
-            <h2 data-gfont="Courgette" class="display-5 mb-6 fw-bold js-init-gfont gfont_07jr7h aos-init aos-animate"
-                data-aos="fade-in" data-aos-delay="0" data-aos-offset="0">
-                <a href="#"><span class="d-block fs-6 text-brown-200">포트폴리오</span></a>
-            </h2>
-
-            <div class="card-columns aos-init aos-animate" data-aos="fade-up" data-aos-delay="450">
-
-                <a href="demo.files/images/various/caffe/gallery/jonathan-borba-21tOEaJPM_o-unsplash-min.jpg"
-                   data-photoswipe="gallery"
-                   class="card border-0 photoswipe transition-hover-top transition-all-ease-250 overflow-hidden overlay-dark-hover overlay-opacity-2 js-photoswapified"
-                   data-group-id="71121251825" data-index="0">
-                    <img class="w-100 img-fluid lazy rounded"
-                         src="demo.files/images/various/caffe/gallery/jonathan-borba-21tOEaJPM_o-unsplash-min.jpg"
-                         alt="..." data-loaded="true">
-                </a>
-
-                <a href="demo.files/images/various/caffe/gallery/jonathan-borba-ZfyZ14gd2FM-unsplash-min.jpg"
-                   data-photoswipe="gallery"
-                   class="card border-0 photoswipe transition-hover-top transition-all-ease-250 overflow-hidden overlay-dark-hover overlay-opacity-2 js-photoswapified"
-                   data-group-id="71121251825" data-index="7">
-                    <img class="img-fluid lazy rounded"
-                         src="demo.files/images/various/caffe/gallery/jonathan-borba-ZfyZ14gd2FM-unsplash-min.jpg"
-                         alt="..." data-loaded="true">
-                </a>
-
-                <a href="demo.files/images/various/caffe/gallery/nikola-jovanovic-5sipOXw8Row-unsplash-min.jpg"
-                   data-photoswipe="gallery"
-                   class="card border-0 photoswipe transition-hover-top transition-all-ease-250 overflow-hidden overlay-dark-hover overlay-opacity-2 js-photoswapified"
-                   data-group-id="71121251825" data-index="8">
-                    <img class="img-fluid lazy rounded"
-                         src="demo.files/images/various/caffe/gallery/nikola-jovanovic-5sipOXw8Row-unsplash-min.jpg"
-                         alt="..." data-loaded="true">
-                </a>
-
-
-            </div>
-
-        </div>
-    </div>
-
+    <!-- /block : work -->
 </div>
 
 

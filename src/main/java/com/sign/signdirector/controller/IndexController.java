@@ -1,26 +1,34 @@
 package com.sign.signdirector.controller;
 
-import com.sign.signdirector.dto.SampleDTO;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class IndexController {
     @GetMapping({"/", "/index","main.html"})
-    public String index(){
+    public String index(HttpServletRequest request){
+        HttpSession session = request.getSession();
+        String adminCode = (request.getParameter("adminCode") == null) ?
+                "" : request.getParameter("adminCode");
+
+        if(adminCode.equals("모르가나")) {
+            session.setAttribute("isAdmin", "Y");
+        }
+
         return "main";
     }
 
     @GetMapping("/blank")
     public String blank(){
         return "blank";
+    }
+
+    @GetMapping("/common/404-2")
+    public String page404(){
+        return "common/404-2";
     }
 
 

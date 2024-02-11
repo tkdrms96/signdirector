@@ -1,7 +1,8 @@
 package com.sign.signdirector.controller;
 
-import com.sign.signdirector.dto.SimpleConsultingDTO;
-import com.sign.signdirector.service.PlaceService;
+import com.sign.signdirector.dto.consult.ConsultingDTO;
+import com.sign.signdirector.entity.consult.Consulting;
+import com.sign.signdirector.service.place.PlaceService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,9 +20,10 @@ public class PlaceController {
     /* 간편 견적 등록 */
     @PostMapping({"/saveSimpleConsultingAjax"})
     @ResponseBody
-    public ResponseEntity<String> saveSimpleConsultingAjax(SimpleConsultingDTO simpleConsultingDTO){
-        int result = placeService.saveSimpleConsulting(simpleConsultingDTO);
-        return result == 1
+    public ResponseEntity<String> saveSimpleConsultingAjax(ConsultingDTO consultingDTO){
+        Consulting result = placeService.saveSimpleConsulting(consultingDTO);
+
+        return result.getId() != null
                 ? new ResponseEntity<>("success", HttpStatus.OK)
                 : new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
     }

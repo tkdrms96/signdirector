@@ -2,6 +2,7 @@ package com.sign.signdirector.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -23,6 +24,12 @@ public class MvcConfiguration implements WebMvcConfigurer {
         registry.addResourceHandler("/font/**").addResourceLocations("classpath:/static/assets/font/").setCachePeriod(60 * 60 * 24 * 365);
         /* '/fonts/**'로 호출하는 자원은 '/static/font/' 폴더 아래에서 찾는다. */
         registry.addResourceHandler("/fonts/**").addResourceLocations("classpath:/static/assets/font/").setCachePeriod(60 * 60 * 24 * 365);
+
     }
 
+    //Admin Interceptor 추가
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new AdminInterceptor()).addPathPatterns("/admin/**");
+    }
 }
