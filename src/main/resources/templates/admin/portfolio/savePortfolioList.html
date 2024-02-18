@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{shared/_layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Director</title>
+</head>
+
+
+<body>
+<div layout:fragment="content">
+
+    <div id="wrapper_content" class="d-flex flex-fill">
+        <!--admin sidebar-->
+        <th:block th:replace="fragments/adminMenu :: adminMeunuFragment">
+
+
+        </th:block>
+
+
+        <div class="wrapper" style="margin-top: 20px;">
+            <div class="contents">
+                <div class="community">
+                    <div class="list-top">
+                        <form class="search v2" id="searchForm" name="searchForm" method="post" action="/community/event/eventList.do">
+                            <!-- 20231218 수정 -->
+                            <div class="word">
+                                <select name="" id="">
+                                    <option value="">전체</option>
+                                </select>
+                                <input type="text" name="searchNttNm" id="searchNttNm" value="" placeholder="검색어를 입력해주세요.">
+                            </div>
+                            <!--// 20231218 수정 -->
+                            <button class="btn md line-mariner" type="button" onclick="fnSubmit()">등록</button>
+                            <input type="hidden" id="cPage" name="cPage" value="1">
+                        </form>
+                    </div>
+
+                    <div class="list-wrap v4">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" onclick="">
+                                    <div class="tit-wrap">
+                                        <div class="order">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="tit-area">
+
+                                            <p class="tit">병원</p>
+                                        </div>
+                                    </div>
+                                    <div class="data-wrap blue_bg">
+                                        <div class="date"><p>작업일 2024-01 ~ 2024-03 등록일</p></p></div><!-- 20231218 수정 -->
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="list-bottom">
+
+
+
+
+
+
+                        <div class="paging">
+                            <ul>
+
+                                <li class="prev"><a href="javascript:void(0);">다음</a></li>
+
+                                <li class="on"><a href="javascript:void(0);">1</a></li>
+
+                                <li onclick="fnMovePage('2','/community/event/eventList.do','searchForm', 'move')"><a href="javascript:void(0);">2</a></li>
+
+                                <li class="next active" onclick="fnMovePage('5','/community/event/eventList.do','searchForm', 'next')"><a href="javascript:void(0);">다음</a></li>
+
+
+                            </ul>
+                        </div>
+
+                        <script>
+                            function fnMovePage(cPage, url, formName, flag) {
+
+                                if(flag === 'prev') {
+                                    $('input[name="cPage"]').val(parseInt(cPage, 10) -1);
+                                } else if(flag === 'next') {
+                                    $('input[name="cPage"]').val(parseInt(cPage, 10) +1);
+                                } else {
+                                    $('input[name="cPage"]').val(cPage);
+                                }
+
+                                $('#' + formName).attr('action',url);
+                                $('#' + formName).submit();
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>

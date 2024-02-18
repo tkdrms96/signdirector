@@ -12,9 +12,14 @@ import javax.servlet.http.HttpServletRequest;
 @RequiredArgsConstructor
 public class AdminController {
     @GetMapping({"/main"})
-    public String board(HttpServletRequest request){
+    public String main(HttpServletRequest request){
 
 
         return "admin/main";
+    }
+    @GetMapping({"/savePortfolioList"})
+    public String savePortfolio(HttpServletRequest request){
+
+        return "admin/portfolio/savePortfolioList";
     }
 }

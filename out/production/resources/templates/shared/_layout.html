@@ -19,6 +19,7 @@
 
   <link rel="stylesheet" th:href="@{/css/core.min.css}">
   <link rel="stylesheet" th:href="@{/css/vendor_bundle.min.css}">
+  <link rel="stylesheet" th:href="@{/css/custom.css}">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- favicon -->
@@ -36,7 +37,10 @@
   <!-- header fragment 사용 -->
   <th:block th:replace="fragments/header :: headerFragment"></th:block>
   <!-- content fragment 사용 -->
-  <th:block layout:fragment="content"></th:block>
+  <th:block layout:fragment="content">
+
+  </th:block>
+
   <!-- footer fragment 사용 -->
   <th:block th:replace="fragments/footer :: footerFragment"></th:block>
 
